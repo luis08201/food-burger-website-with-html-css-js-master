@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="images/burger-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <title>Food Burger | Landing Page</title>
 </head>
@@ -13,10 +15,20 @@
             <div class="header__top">
                 <figure class="header__top--picture">
                     <a href="#" class="header__top--brand">
-                        <img src="images/logo.png" alt="Food Burger Logo" class="header__top--img">
+                        <img src="images/logo.png" alt="Food Burger" class="header__top--img">
                     </a>
                 </figure>
-                <nav class="header__top--nav">
+                <button class="header__top--toggle" id="menuBTN">
+                    <div class="header__top--bar"></div>
+                    <div class="header__top--bar"></div>
+                    <div class="header__top--bar"></div>
+                </button>
+                <nav class="header__top--nav" id="nav">
+                    <div class="header__top--toggleClose" id="menucloseBTN">
+                        <div class="header__top--barClose"></div>
+                        <div class="header__top--barClose"></div>
+                        <div class="header__top--barClose"></div>
+                    </div>
                     <ul class="header__top--menu">
                         <li class="header__top--list">
                             <a href="#" class="header__top--link">home</a>
@@ -37,169 +49,242 @@
                 </nav>
             </div>
             <div class="header__home">
-                <article class="header__home--article">
-                    <h1 class="header__home--firstheading">Get Cashback <br>up to 50%</h1>
-                    <p class="header__home--paragraph">
+                <div class="header__description">
+                    <h1 class="header__description--firstheading">
+                        Get Cashback up to 50%
+                    </h1>
+                    <p class="header__description--paragraph">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ipsa dignissimos id? Perferendis, natus.
                     </p>
-                    <a href="#" class="header__home--cta">order now</a>
-                </article>
+                    <a href="#" class="header__description--cta">order now</a>
+                </div>
             </div>
         </section>
     </header>
-    <main class="main">
-        <section class="ourChef ourChef-bg">
-            <div class="ourChef__main">
-                <div class="ourChef__header">
-                    <h2 class="ourChef__header--secondheading">our chef</h2>
-                    <p class="ourChef__header--paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam quod numquam <br> aepe earum in eaque
-                    </p>
-                </div>
-                <div class="ourChef__body">
+    <section class="ourChef ourChef-bg">
+        <div class="ourChef__main">
+            <div class="ourChef__header">
+                <h2 class="ourChef__header--secondheading">our chef</h2>
+                <p class="ourChef__header--paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing eli Aliquam quod numquam saepe earum in eaque
+                </p>
+            </div>
+            <div class="ourChef__body">
+                <div class="ourChef__body--box">
                     <figure class="ourChef__body--picture">
-                        <img src="images/chef-img-1.png" alt="Aiden Hunter" class="ourChef__body--img">
-                        <div class="ourChef__body--description">
-                            <h4 class="ourChef__body--smallheading">aiden hunter</h4>
-                            <p class="ourChef__body--paragraph">founder</p>
-                        </div>
+                        <img src="images/chef-img-1.png" alt="Aiden hunter" class="ourChef__body--img">
                     </figure>
+                    <div class="ourChef__body--description">
+                        <h3 class="ourChef__body--smallheading">aiden hunter</h3>
+                        <p class="ourChef__body--paragraph">founder</p>
+                    </div>
+                </div>
+                <div class="ourChef__body--box">
                     <figure class="ourChef__body--picture">
                         <img src="images/chef-img-3.png" alt="Ethel Ramsey" class="ourChef__body--img">
-                        <div class="ourChef__body--description">
-                            <h4 class="ourChef__body--smallheading">ethel ramsey</h4>
-                            <p class="ourChef__body--paragraph">Co-Founder</p>
-                        </div>
                     </figure>
+                    <div class="ourChef__body--description">
+                        <h3 class="ourChef__body--smallheading">ethel ramsey</h3>
+                        <p class="ourChef__body--paragraph">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="ourChef__body--box">
                     <figure class="ourChef__body--picture">
-                        <img src="images/chef-img-2.png" alt="Fannie Stewart" class="ourChef__body--img">
-                        <div class="ourChef__body--description">
-                            <h4 class="ourChef__body--smallheading">fannie stewart</h4>
-                            <p class="ourChef__body--paragraph">Co-Founder</p>
-                        </div>
+                        <img src="images/chef-img-2.png" alt="Fanne Stewart" class="ourChef__body--img">
                     </figure>
-                </div>
-            </div>
-        </section>
-        <section class="bestBurger bestBurger-bg">
-            <div class="bestBurger__main">
-                <figure class="bestBurger__picture">
-                    <img src="images/burger-img-1.png" alt="Burger One" class="bestBurger__img">
-                </figure>
-                <article class="bestBurger__article">
-                    <h2 class="bestBurger__article--secondheading">best burger</h2>
-                    <p class="bestBurger__article--paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Aliquam quod numquam saepe earum in eaque
-                    </p>
-                    <a href="#" class="bestBurger__article--cta">order now</a>
-                </article>
-            </div>
-        </section>
-        <section class="bigburger bigburger-bg">
-            <div class="bigburger__main">
-                <article class="bigburger__article">
-                    <h2 class="bigburger__article--secondheading">
-                        big burger
-                    </h2>
-                    <p class="bigburger__article--paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Aliquam quod numquam saepe earum in eaque
-                    </p>
-                    <a href="#" class="bigburger__article--cta">
-                        order now
-                    </a>
-                </article>
-                <figure class="bigburger__picture">
-                    <img src="images/burger-img-2.png" alt="Burger Two" class="bigburger__img">
-                </figure>
-            </div>
-        </section>
-        <section class="statistics statistics-bg">
-            <div class="statistics__main">
-                <div class="statistics__header">
-                    <h2 class="statistics__header--secondheading">statistic</h2>
-                    <p class="statistics__header--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam quod numquam <br>saepe earum in eaque</p>
-                </div>
-                <div class="statistics__body">
-                    <div class="statistics__body--box">
-                        <h3 class="statistics__body--middleheading">7k</h3>
-                        <p class="statistics__body--paragraph">customer</p>
-                    </div>
-                    <div class="statistics__body--box">
-                        <h3 class="statistics__body--middleheading">109</h3>
-                        <p class="statistics__body--paragraph">outlets</p>
-                    </div>
-                    <div class="statistics__body--box">
-                        <h3 class="statistics__body--middleheading">35</h3>
-                        <p class="statistics__body--paragraph">country</p>
+                    <div class="ourChef__body--description">
+                        <h3 class="ourChef__body--smallheading">fannie stewart</h3>
+                        <p class="ourChef__body--paragraph">Co-Founder</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="package package-bg">
-            <div class="package__main">
-                <div class="package__header">
-                    <h2 class="package__header--secondheading">popular package</h2>
+        </div>
+    </section>
+    <section class="bestBurger bestBurger-bg">
+        <div class="bestBurger__main">
+            <figure class="bestBurger__picture">
+                <img src="images/burger-img-2.png" alt="Burger One" class="bestBurger__img">
+            </figure>
+            <article class="bestBurger__article">
+                <h2 class="bestBurger__article--secondheading">best burger</h2>
+                <p class="bestBurger__article--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam quod numquam saepe earum in eaque</p>
+                <a href="#" class="bestBurger__article--cta">order now</a>
+            </article>
+        </div>
+    </section>
+    <section class="bigBurger bigBurger-bg">
+        <div class="bigBurger__main">
+            <article class="bigBurger__article">
+                <h2 class="bigBurger__article--secondheading">big burger</h2>
+                <p class="bigBurger__article--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam quod numquam saepe earum in eaque</p>
+                <a href="#" class="bigBurger__article--cta">order now</a>
+            </article>
+            <figure class="bigBurger__picture">
+                <img src="images/burger-img-1.png" alt="Burger Two" class="bigBurger__img">
+            </figure>
+        </div>
+    </section>
+    <section class="statistics statistics-bg">
+        <div class="statistics__main">
+            <div class="statistics__header">
+                <h2 class="statistics__header--secondheading">statistics</h2>
+                <p class="statistics__header--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam quod numquam saepe earum in eaque</p>
+            </div>
+            <div class="statistics__body">
+                <div class="statistics__body--box">
+                    <h2 class="statistics__body--secondheading"> 7k</h2>
+                    <p class="statistics__body--paragraph">customer</p>
                 </div>
-                <div class="package__body">
-                    <div class="package__body--box">
-                        <h3 class="package__body--middleheading">package I</h3>
-                        <figure class="package__body--picture">
-                            <img src="images/burger-icon.png" alt="Burger ico" class="package__body--img">
-                        </figure>
-                        <p class="package__body--price">
-                            $10.00
-                        </p>
-                        <p class="package__body--paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        </p>
-                        <a href="#" class="package__body--cta">order now</a>
-                    </div>
-                    <div class="package__body--box">
-                        <h3 class="package__body--middleheading">package II</h3>
-                        <figure class="package__body--picture">
-                            <img src="images/burger-icon.png" alt="Burger ico" class="package__body--img">
-                        </figure>
-                        <p class="package__body--price">
-                            $20.00
-                        </p>
-                        <p class="package__body--paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        </p>
-                        <a href="#" class="package__body--cta">order now</a>
-                    </div>
-                    <div class="package__body--box">
-                        <h3 class="package__body--middleheading">package III</h3>
-                        <figure class="package__body--picture">
-                            <img src="images/burger-icon.png" alt="Burger ico" class="package__body--img">
-                        </figure>
-                        <p class="package__body--price">
-                            $30.00
-                        </p>
-                        <p class="package__body--paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        </p>
-                        <a href="#" class="package__body--cta">order now</a>
-                    </div>
+                <div class="statistics__body--box">
+                    <h2 class="statistics__body--secondheading">109</h2>
+                    <p class="statistics__body--paragraph">outlets</p>
+                </div>
+                <div class="statistics__body--box">
+                    <h2 class="statistics__body--secondheading">35</h2>
+                    <p class="statistics__body--paragraph">country</p>
                 </div>
             </div>
-        </section>
-        <section class="contact contact-bg">
-            <div class="contact__main">
-               <h2 class="contact__main--secondheading">Don't miss Our Update</h2>
-               <p class="contact__main--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit <br>Aliquam quod numquam saepe earum in eaque</p>
-               <form action="" class="contact__formulario">
-                   <div class="contact__formulario--input">
-                       <input type="email" name="" id="" class="contact__formulario-in" placeholder="Your Email">
-                   </div>
-                   <div class="contact__formulario--btn">
-                        <input type="button" value="SUBSCRIBE" class="contact__formulario--cta">
-                   </div>
-               </form>
+        </div>
+    </section>
+    <section class="package package-bg">
+        <div class="package__main">
+            <div class="package__header">
+                <h2 class="package__header--secondheading">popular package</h2>
             </div>
+            <div class="package__body">
+                <div class="package__body--box">
+                    <h3 class="package__body--middleheading">package i</h3>
+                    <figure class="package__body--picture">
+                        <img src="images/burger-icon.png" alt="Package #" class="package__body--img">
+                    </figure>
+                    <h4 class="package__body--smallheading">$10.00</h4>
+                    <p class="package__body--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="#" class="package__body--cta">order now</a>
+                </div>
+                <div class="package__body--box">
+                    <h3 class="package__body--middleheading">package ii</h3>
+                    <figure class="package__body--picture">
+                        <img src="images/burger-icon.png" alt="Package #" class="package__body--img">
+                    </figure>
+                    <h4 class="package__body--smallheading">$20.00</h4>
+                    <p class="package__body--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="#" class="package__body--cta">order now</a>
+                </div>
+                <div class="package__body--box">
+                    <h3 class="package__body--middleheading">package iii</h3>
+                    <figure class="package__body--picture">
+                        <img src="images/burger-icon.png" alt="Package #" class="package__body--img">
+                    </figure>
+                    <h4 class="package__body--smallheading">$30.00</h4>
+                    <p class="package__body--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="#" class="package__body--cta">order now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact contact-bg">
+        <div class="contact__main">
+            <div class="contact__header">
+                <h2 class="contact__header--secondheading">Don't miss Our Update</h2>
+                <p class="contact__header--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam quod numquam saepe earum in eaque</p>
+            </div>
+            <form action="" class="contact__formulario">
+                <div class="contact__formulario--inp">
+                    <input type="email" name="" id="" class="contact__formulario--input" placeholder="Your Email">
+                </div>
+                <div class="contact__formulario--btn">
+                    <input type="button" value="subscribe" class="contact__formulario--cta">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer footer-bg">
+        <section class="footer__main">
+            <article class="footer__article">
+                <h2 class="footer__article--middleheading">burger shop</h2>
+                <p class="footer__article--paragraph">Lorem ipsum dolor sit amet consectetur, asipisicing elit. Consequatur laudantium similique,quo fuga molestiae inventore earum explicabo nulla ab ea, et harum, veniam dolores cupiditate?</p>
+                <ul class="footer__article--menu">
+                    <li class="footer__article--list">
+                        <a href="#" class="footer__article--link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="footer__article--list">
+                        <a href="#" class="footer__article--link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="footer__article--list">
+                        <a href="#" class="footer__article--link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="footer__article--list">
+                        <a href="#" class="footer__article--link">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <aside class="footer__aside">
+                <div class="footer__about">
+                    <h3 class="footer__about--middleheading">about</h3>
+                    <ul class="footer__about--menu">
+                        <li class="footer__about--list">
+                            <a href="#" class="footer__about--link">History</a>
+                        </li>
+                        <li class="footer__about--list">
+                            <a href="#" class="footer__about--link">Our Team</a>
+                        </li>
+                        <li class="footer__about--list">
+                            <a href="#" class="footer__about--link">Brand Guidelines</a>
+                        </li>
+                        <li class="footer__about--list">
+                            <a href="#" class="footer__about--link">Terms & Condition</a>
+                        </li>
+                        <li class="footer__about--list">
+                            <a href="#" class="footer__about--link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__services">
+                    <h3 class="footer__services--middleheading">services</h3>
+                    <ul class="footer__services--menu">
+                        <li class="footer__services--list">
+                            <a href="#" class="footer__services--link">How to Order</a>
+                        </li>
+                        <li class="footer__services--list">
+                            <a href="#" class="footer__services--link">Our Product</a>
+                        </li>
+                        <li class="footer__services--list">
+                            <a href="#" class="footer__services--link">Order Status</a>
+                        </li>
+                        <li class="footer__services--list">
+                            <a href="#" class="footer__services--link">Promo</a>
+                        </li>
+                        <li class="footer__services--list">
+                            <a href="#" class="footer__services--link">Payment Method</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__other">
+                    <h3 class="footer__other--middleheading">other</h3>
+                    <ul class="footer__other--menu">
+                        <li class="footer__other--list">
+                            <a href="#" class="footer__other--link">Contact Us</a>
+                        </li>
+                        <li class="footer__other--list">
+                            <a href="#" class="footer__other--link">Help</a>
+                        </li>
+                        <li class="footer__other--list">
+                            <a href="#" class="footer__other--link">Privacy </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
         </section>
-    </main>
-    <footer class="footer">
-        <section class="footer__main"></section>
     </footer>
+    <script src="js/menu.js"></script>
+    
 </body>
 </html>

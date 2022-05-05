@@ -1,5 +1,16 @@
-@mixin content-max-width {
-    max-width: 85%;
-    width: 100%;
+@mixin content-max-width{
+    max-width: 89%;
     margin: 0 auto;
+    
+}
+
+@mixin content-padding{
+padding: 0 29px;
+padding-top: 109px;
+padding-bottom: 102px;
+
+@media screen and (min-width:768px) {
+    padding-top: 59px;
+    padding-bottom: 72px;
+}
 }
